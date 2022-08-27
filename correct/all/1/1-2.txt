@@ -1,6 +1,0 @@
-double
-v2
-;
-int
-v1
-;
