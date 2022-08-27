@@ -1,0 +1,6 @@
+int
+v1
+;
+double
+v2
+;
