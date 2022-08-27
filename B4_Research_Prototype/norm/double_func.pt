@@ -1,0 +1,13 @@
+%before
+
+double func1(double p1, int p2) 
+{
+    $[decl: ${:DECL} $]*
+    $[stmt: ${:STMT} $]*
+}
+
+%after
+
+    $[decl]$;$[stmt]$;
+
+%end

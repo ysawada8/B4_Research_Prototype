@@ -1,0 +1,10 @@
+%before
+
+double ${a:EXPR} = ${b:EXPR};
+
+%after
+
+double ${a};
+${a} = ${b};
+
+%end

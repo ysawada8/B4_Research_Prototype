@@ -1,0 +1,13 @@
+%before
+
+for(${cond1:EXPR};${left:EXPR} > ${right:EXPR};${cond2:EXPR}){
+    ${stmt:STMT}
+}
+
+%after
+
+for(${cond1};${right} < ${left};${cond2}){
+    ${stmt}
+}
+
+%end

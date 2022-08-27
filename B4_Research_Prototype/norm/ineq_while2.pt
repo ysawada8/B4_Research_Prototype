@@ -1,0 +1,13 @@
+%before
+
+while(${left:EXPR} >= ${right:EXPR}){
+    $[stmt: ${:STMT} $]+
+}
+
+%after
+
+while(${right} <= ${left}){
+    ${stmt}$;
+}
+
+%end

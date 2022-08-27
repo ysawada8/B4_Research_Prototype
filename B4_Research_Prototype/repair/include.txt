@@ -1,0 +1,3 @@
+#include<stdio.h>
+double func1(double p1,int p2)
+{

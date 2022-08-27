@@ -1,0 +1,10 @@
+%before
+
+int ${a:EXPR} = ${b:EXPR};
+
+%after
+
+int ${a};
+${a} = ${b};
+
+%end

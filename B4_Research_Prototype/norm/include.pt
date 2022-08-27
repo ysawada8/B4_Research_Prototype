@@ -1,0 +1,9 @@
+%before
+
+#include<stdio.h>
+
+%after
+
+
+
+%end

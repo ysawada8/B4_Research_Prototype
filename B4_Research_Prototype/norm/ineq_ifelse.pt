@@ -1,0 +1,17 @@
+%before
+
+if(${left:EXPR}>${right:EXPR}){
+    $[stmt: ${:STMT} $]+
+}else{
+    $[stmt2: ${:STMT} $]+
+}
+
+%after
+
+if (${right} < ${left}) {
+    ${stmt}$;
+} else {
+    ${stmt2}$;
+}
+
+%end
